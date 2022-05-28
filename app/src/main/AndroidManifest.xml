@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeseninAja">
         <activity
+            android:name=".DetailList"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity
