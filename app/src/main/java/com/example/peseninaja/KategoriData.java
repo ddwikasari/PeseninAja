@@ -8,12 +8,14 @@ public class KategoriData {
             "Makanan",
             "Minuman",
             "Dessert",
+            "Snack"
     };
 
     private static int[] kategoriImage = {
             R.drawable.makanan,
             R.drawable.minuman,
             R.drawable.dessert,
+            R.drawable.snack,
     };
 
     static ArrayList<Kategori> getListData(){
