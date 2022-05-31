@@ -3,31 +3,72 @@ package com.example.peseninaja;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Makanan {
-    private String nama;
-    private int price, image;
+public class Makanan implements Parcelable {
 
-    public String getNama() {
-        return nama;
+    private String Title;
+    private int Price;
+    private int Photo;
+
+    public Makanan() {
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public Makanan(String title, int price, int photo) {
+        Title = title;
+        Price = price;
+        Photo = photo;
+    }
+
+    protected Makanan(Parcel in) {
+        Title = in.readString();
+        Price = in.readInt();
+        Photo = in.readInt();
+    }
+
+    public static final Creator<Makanan> CREATOR = new Creator<Makanan>() {
+        @Override
+        public Makanan createFromParcel(Parcel in) {
+            return new Makanan(in);
+        }
+
+        @Override
+        public Makanan[] newArray(int size) {
+            return new Makanan[size];
+        }
+    };
+
+    public String getTitle() {
+        return Title;
     }
 
     public int getPrice() {
-        return price;
+        return Price;
+    }
+
+    public int getPhoto() {
+        return Photo;
+    }
+
+    public void setTitle(String title) {
+        Title = title;
     }
 
     public void setPrice(int price) {
-        this.price = price;
+        Price = price;
     }
 
-    public int getImage() {
-        return image;
+    public void setPhoto(int photo) {
+        Photo = photo;
     }
 
-    public void setImage(int image) {
-        this.image = image;
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(Title);
+        parcel.writeInt(Price);
+        parcel.writeInt(Photo);
     }
 }

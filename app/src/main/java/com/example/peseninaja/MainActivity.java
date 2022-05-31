@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_main);
 
         EditText txtUser = findViewById(R.id.txtUser);
         EditText txtPass = findViewById(R.id.txtPass);
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 if(txtUser.getText().toString().equalsIgnoreCase(username)&& txtPass.getText().toString().equalsIgnoreCase(password)){
-                    startActivity(new Intent(MainActivity.this, list_menu.class));
+                    startActivity(new Intent(MainActivity.this, Dasbhoard.class));
 
                 }else{
                     Toast.makeText(MainActivity.this, "Username/Password Salah", Toast.LENGTH_SHORT).show();
