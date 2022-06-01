@@ -10,19 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeseninAja">
         <activity
-            android:name=".DetailMenu"
-            android:exported="false" />
-        <activity
-            android:name=".Dasbhoard"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter></activity>
+
+        <activity
+            android:name=".SarapanR"
+            android:exported="false" />
+        <activity
+            android:name=".KopiR"
+            android:exported="false" />
+        <activity
+            android:name=".DesertR"
+            android:exported="false" />
+        <activity
+            android:name=".SnackR"
+            android:exported="false" />
+        <activity
+            android:name=".MinumanR"
+            android:exported="false" />
+        <activity
+            android:name=".MakananR"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
     </application>
 
