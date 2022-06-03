@@ -6,20 +6,23 @@ public class MakananData {
             "Nasi Kuning",
             "Nasi Goreng",
             "Sate",
-            "Soto Betawi"
+            "Soto Betawi",
+            "Ayam Betutu"
     };
 
     private  static String [] makananDesc = {
             "Nasi Kuning Enak Banget",
             "Nasi Goreng Enakk",
             "Sate Isinya Banyal",
-            "Soto Betawi Sedapp"
+            "Soto Betawi Sedapp",
+            "Ayam Betutu Khas Bu oki"
     };
     private static int [] makananPrice= {
             15000,
             10000,
             20000,
             10000,
+            15000,
     };
 
     private static int[] makananImage = {
@@ -27,9 +30,11 @@ public class MakananData {
             R.drawable.nasgor,
             R.drawable.sate,
             R.drawable.soto,
+            R.drawable.betutu,
     };
 
     private static int[] makananCount ={
+            0,
             0,
             0,
             0,
