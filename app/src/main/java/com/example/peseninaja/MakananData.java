@@ -1,7 +1,7 @@
 package com.example.peseninaja;
 import java.util.ArrayList;
 
-public class DataMakanan {
+public class MakananData {
     private  static String [] makananName = {
             "Nasi Kuning",
             "Nasi Goreng",

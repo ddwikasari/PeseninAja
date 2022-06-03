@@ -15,10 +15,10 @@ import com.bumptech.glide.request.RequestOptions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListMakananAdapter extends RecyclerView.Adapter<ListMakananAdapter.ListViewHolder> {
+public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ListViewHolder> {
     private ArrayList<Makanan> listMakanan;
 
-    public ListMakananAdapter(ArrayList<Makanan> list) {
+    public MakananAdapter(ArrayList<Makanan> list) {
         this.listMakanan = list;
     }
 
