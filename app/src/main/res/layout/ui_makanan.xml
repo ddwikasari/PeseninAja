@@ -111,6 +111,7 @@
                     android:layout_marginBottom="8dp"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="+"
+                    android:textColor="@color/putih"
                     app:backgroundTint="@color/colorAccent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" />
@@ -136,6 +137,7 @@
                     android:layout_marginBottom="8dp"
                     android:gravity="center_vertical|center_horizontal"
                     android:text="-"
+                    android:textColor="@color/putih"
                     app:backgroundTint="@color/colorAccent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/itemCount" />

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Beranda"
+        android:id="@+id/beranda"
+        android:icon="@drawable/bottom_home"/>
+    <item android:title="Promo"
+        android:id="@+id/promo"
+        android:icon="@drawable/playlist"/>
+    <item android:title="Pesanan"
+        android:id="@+id/pesanan"
+        android:icon="@drawable/bottom_keranjang"/>
+    <item android:title="Diskusi"
+        android:id="@+id/diskusi"
+        android:icon="@drawable/searching"/>
+
+</menu>
