@@ -9,11 +9,17 @@ public class MakananData {
             "Soto Betawi"
     };
 
-    private static String [] makananPrice= {
-            "15000",
-            "10000",
-            "20000",
-            "10000"
+    private  static String [] makananDesc = {
+            "Nasi Kuning Enak Banget",
+            "Nasi Goreng Enakk",
+            "Sate Isinya Banyal",
+            "Soto Betawi Sedapp"
+    };
+    private static int [] makananPrice= {
+            15000,
+            10000,
+            20000,
+            10000,
     };
 
     private static int[] makananImage = {
@@ -23,13 +29,22 @@ public class MakananData {
             R.drawable.soto,
     };
 
+    private static int[] makananCount ={
+            0,
+            0,
+            0,
+            0,
+    };
+
     static ArrayList<Makanan> getListData(){
         ArrayList<Makanan> list = new ArrayList<>();
         for (int position = 0; position<makananName.length; position++){
             Makanan makanan = new Makanan();
             makanan.setName(makananName[position]);
+            makanan.setDesc(makananDesc[position]);
             makanan.setPrice(makananPrice[position]);
             makanan.setPhoto(makananImage[position]);
+            makanan.setCount(makananCount[position]);
             list.add(makanan);
         }
         return list;

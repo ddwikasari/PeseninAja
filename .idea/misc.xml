@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/drawable/card_kategori.xml" value="0.2025" />
+        <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.205" />
+        <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_confirmorder.xml" value="0.152" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_dasbhoard.xml" value="0.11302083333333333" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_desert_r.xml" value="0.25416666666666665" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_list_menu.xml" value="0.2" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_makanan_r.xml" value="0.25416666666666665" />
+        <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_makanan_r.xml" value="0.2" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_menu_item.xml" value="0.23854166666666668" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_minuman_r.xml" value="0.1609375" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/activity_splash.xml" value="0.1609375" />
@@ -18,7 +20,7 @@
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/item_menu.xml" value="0.4" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/list_menu.xml" value="0.264" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/login.xml" value="0.2" />
-        <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/ui_makanan.xml" value="0.264" />
+        <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/layout/ui_makanan.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/Downloads/PeseninAja/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1455" />
         <entry key="..\:/Users/ASUS/Downloads/PeseninAja/app/src/main/res/drawable/bg_penambahan.xml" value="0.1455" />
         <entry key="..\:/Users/ASUS/Downloads/PeseninAja/app/src/main/res/drawable/card_kategori.xml" value="0.1545" />
@@ -56,17 +58,6 @@
         <entry key="..\:/Users/ASUS/Downloads/PeseninAja/app/src/main/res/layout/list_menu.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/ASUS/Downloads/PeseninAja/app/src/main/res/layout/login.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/ASUS/Downloads/PeseninAja/app/src/main/res/layout/row_makanan.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_confirmorder.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_dasbhoard.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_desert_r.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_kopi_r.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_makanan_r.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_minuman_r.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_sarapan_r.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_snack_r.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/activity_splash.xml" value="0.2" />
-        <entry key="..\:/Users/Ngurah Adi Putra/OneDrive/Dokumen/GitHub/PeseninAja/app/src/main/res/layout/ui_makanan.xml" value="0.2" />
       </map>
     </option>
   </component>

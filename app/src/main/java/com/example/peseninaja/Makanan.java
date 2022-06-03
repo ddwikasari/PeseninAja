@@ -3,7 +3,36 @@ package com.example.peseninaja;
 
 public class Makanan {
     private String name;
-    private String price;
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    private int price;
+    private String desc;
+    private int photo;
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    private int count;
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
 
     public String getName() {
         return name;
@@ -13,13 +42,6 @@ public class Makanan {
         this.name = name;
     }
 
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
 
     public int getPhoto() {
         return photo;
@@ -29,5 +51,4 @@ public class Makanan {
         this.photo = photo;
     }
 
-    private int photo;
 }
