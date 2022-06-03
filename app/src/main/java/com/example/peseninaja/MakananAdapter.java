@@ -25,7 +25,7 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ListView
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_row_makanan, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ui_makanan, parent, false);
         return new ListViewHolder(view);
     }
 
