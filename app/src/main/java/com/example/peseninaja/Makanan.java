@@ -1,9 +1,9 @@
 package com.example.peseninaja;
 
+
 public class Makanan {
     private String name;
-    private int price;
-    private int photo;
+    private String price;
 
     public String getName() {
         return name;
@@ -13,11 +13,11 @@ public class Makanan {
         this.name = name;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -28,4 +28,6 @@ public class Makanan {
     public void setPhoto(int photo) {
         this.photo = photo;
     }
+
+    private int photo;
 }

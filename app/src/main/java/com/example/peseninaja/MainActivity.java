@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 if(txtUser.getText().toString().equalsIgnoreCase(username)&& txtPass.getText().toString().equalsIgnoreCase(password)){
-                    startActivity(new Intent(MainActivity.this, MakananR.class));
+                    startActivity(new Intent(MainActivity.this, Dashboard.class));
 
                 }else{
                     Toast.makeText(MainActivity.this, "Username/Password Salah", Toast.LENGTH_SHORT).show();

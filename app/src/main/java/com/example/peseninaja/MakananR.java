@@ -17,16 +17,16 @@ public class MakananR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_makanan_r);
 
-        rvMakanan = findViewById(R.id.rvMakanan);
+        rvMakanan = findViewById(R.id.rv_makanan);
         rvMakanan.setHasFixedSize(true);
 
-        list.addAll(MakananData.getListData());
+        list.addAll(DataMakanan.getListData());
         showRecyclerList();
     }
 
-    private void showRecyclerList(){
-        rvMakanan.setLayoutManager(new LinearLayoutManager(this));
-        MakananAdapter makananAdapter = new MakananAdapter(list);
-        rvMakanan.setAdapter(makananAdapter);
+    private void showRecyclerList() {
+        rvMakanan.setLayoutManager((new LinearLayoutManager(this)));
+        ListMakananAdapter listFilmAdapter = new ListMakananAdapter(list);
+        rvMakanan.setAdapter(listFilmAdapter);
     }
 }

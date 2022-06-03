@@ -13,18 +13,19 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ListViewHolder>{
+public class ListMakananAdapter extends RecyclerView.Adapter<ListMakananAdapter.ListViewHolder> {
     private ArrayList<Makanan> listMakanan;
 
-    public MakananAdapter(ArrayList<Makanan> list){
+    public ListMakananAdapter(ArrayList<Makanan> list) {
         this.listMakanan = list;
     }
 
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ui_makanan,parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_row_makanan, parent, false);
         return new ListViewHolder(view);
     }
 
@@ -33,27 +34,28 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ListView
         Makanan makanan = listMakanan.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(makanan.getPhoto())
-                .apply(new RequestOptions().override(55,55))
-                .into(holder.imgMenu);
+                .apply(new RequestOptions().override(55, 55))
+                .into(holder.imgPhoto);
         holder.tvName.setText(makanan.getName());
         holder.tvPrice.setText(makanan.getPrice());
     }
 
     @Override
     public int getItemCount() {
-
         return listMakanan.size();
     }
 
-    public class ListViewHolder extends RecyclerView.ViewHolder {
-        ImageView imgMenu;
-        TextView tvName, tvPrice;
+    class ListViewHolder extends RecyclerView.ViewHolder {
+        ImageView imgPhoto;
+        TextView tvName;
+        TextView tvPrice;
 
-        public ListViewHolder(@NonNull View itemView) {
-            super(itemView);
-            imgMenu = itemView.findViewById(R.id.img_produk);
-            tvName = itemView.findViewById(R.id.tv_nama);
-            tvPrice = itemView.findViewById(R.id.tv_harga);
+        ListViewHolder(View itemview) {
+            super(itemview);
+            imgPhoto = itemview.findViewById(R.id.img_produk);
+            tvName = itemview.findViewById(R.id.tv_nama);
+            tvPrice = itemview.findViewById(R.id.tv_harga);
         }
     }
+
 }
