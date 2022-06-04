@@ -10,14 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeseninAja">
         <activity
+            android:name=".OrderViewSarapan"
+            android:exported="false" />
+        <activity
+            android:name=".OrderViewKopi"
+            android:exported="false" />
+        <activity
+            android:name=".OrderViewDesert"
+            android:exported="false" />
+        <activity
+            android:name=".OrderViewSnack"
+            android:exported="false" />
+        <activity
+            android:name=".OrderViewMinuman"
+            android:exported="false" />
+        <activity
+            android:name=".OrderView"
+            android:exported="false" />
+        <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter></activity>
-
+            </intent-filter>
+        </activity>
         <activity
             android:name=".SarapanR"
             android:exported="false" />
@@ -41,8 +59,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

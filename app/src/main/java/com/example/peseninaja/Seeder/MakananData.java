@@ -1,4 +1,7 @@
-package com.example.peseninaja;
+package com.example.peseninaja.Seeder;
+import com.example.peseninaja.Model.Makanan;
+import com.example.peseninaja.R;
+
 import java.util.ArrayList;
 
 public class MakananData {
@@ -23,7 +26,7 @@ public class MakananData {
             R.drawable.soto,
     };
 
-    static ArrayList<Makanan> getListData(){
+    public static ArrayList<Makanan> getListData(){
         ArrayList<Makanan> list = new ArrayList<>();
         for (int position = 0; position<makananName.length; position++){
             Makanan makanan = new Makanan();

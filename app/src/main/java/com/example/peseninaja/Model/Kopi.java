@@ -1,9 +1,10 @@
-package com.example.peseninaja;
+package com.example.peseninaja.Model;
 
+public class Kopi {
 
-public class Makanan {
     private String name;
     private String price;
+    private int photo;
 
     public String getName() {
         return name;
@@ -28,6 +29,4 @@ public class Makanan {
     public void setPhoto(int photo) {
         this.photo = photo;
     }
-
-    private int photo;
 }
