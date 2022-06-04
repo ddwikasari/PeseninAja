@@ -3,37 +3,37 @@ import java.util.ArrayList;
 
 public class MinumanData {
     private  static String [] minumanName = {
-            "Nasi Kuning",
-            "Nasi Goreng",
-            "Sate",
-            "Soto Betawi",
-            "Ayam Betutu"
+            "Thai Tea",
+            "Jus",
+            "Es Teh",
+            "Es Jeruk",
+            "Milk Shake"
     };
 
-    private  static String [] makananDesc = {
-            "Nasi Kuning Enak Banget",
-            "Nasi Goreng Enakk",
-            "Sate Isinya Banyal",
-            "Soto Betawi Sedapp",
-            "Ayam Betutu Khas Bu oki"
+    private  static String [] minumanDesc = {
+            "Teh Thailand",
+            "Buah di Blender",
+            "Seduhan Teh Kantong diberi ES",
+            "Perasan air jeruk diberi ES",
+            "Susu kocok"
     };
-    private static int [] makananPrice= {
-            15000,
+    private static int [] minumanPrice= {
             10000,
-            20000,
             10000,
-            15000,
+            5000,
+            5000,
+            10000,
     };
 
-    private static int[] makananImage = {
-            R.drawable.padang,
-            R.drawable.nasgor,
-            R.drawable.sate,
-            R.drawable.soto,
-            R.drawable.betutu,
+    private static int[] minumanImage = {
+            R.drawable.Thaitea,
+            R.drawable.kuliner_13,
+            R.drawable.esteh,
+            R.drawable.es_jeruk,
+            R.drawable.milkshake,
     };
 
-    private static int[] makananCount ={
+    private static int[] minumanCount ={
             0,
             0,
             0,
@@ -41,16 +41,16 @@ public class MinumanData {
             0,
     };
 
-    static ArrayList<Makanan> getListData(){
-        ArrayList<Makanan> list = new ArrayList<>();
-        for (int position = 0; position<makananName.length; position++){
-            Makanan makanan = new Makanan();
-            makanan.setName(makananName[position]);
-            makanan.setDesc(makananDesc[position]);
-            makanan.setPrice(makananPrice[position]);
-            makanan.setPhoto(makananImage[position]);
-            makanan.setCount(makananCount[position]);
-            list.add(makanan);
+    static ArrayList<Minuman> getListData(){
+        ArrayList<Minuman> list = new ArrayList<>();
+        for (int position = 0; position<minumanName.length; position++){
+            Minuman minuman = new Minuman();
+            minuman.setName(minumanName[position]);
+            minuman.setDesc(minumanDesc[position]);
+            minuman.setPrice(minumanPrice[position]);
+            minuman.setPhoto(minumanImage[position]);
+            minuman.setCount(minumanCount[position]);
+            list.add(minuman);
         }
         return list;
     }
