@@ -26,7 +26,7 @@ public class MinumanData {
     };
 
     private static int[] minumanImage = {
-            R.drawable.Thaitea,
+            R.drawable.thaitea,
             R.drawable.kuliner_13,
             R.drawable.esteh,
             R.drawable.es_jeruk,

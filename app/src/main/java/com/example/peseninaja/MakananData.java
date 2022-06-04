@@ -26,11 +26,11 @@ public class MakananData {
     };
 
     private static int[] makananImage = {
-            R.drawable.padang,
-            R.drawable.nasgor,
-            R.drawable.sate,
-            R.drawable.soto,
-            R.drawable.betutu,
+            R.drawable.kuliner_9,
+            R.drawable.kuliner_10,
+            R.drawable.kuliner_8,
+            R.drawable.kuliner_7,
+            R.drawable.kuliner_6,
     };
 
     private static int[] makananCount ={

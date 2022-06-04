@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:text="Ananta Archels Dwikasari"
                     android:textColor="@color/dasar"
-                    android:textSize="14dp"
+                    android:textSize="13.5dp"
                     android:textStyle="bold" />
                 <TextView
                     android:layout_width="match_parent"
@@ -187,7 +187,7 @@
                         android:id="@+id/gambar_minum"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/kuliner_13" />
+                        android:src="@drawable/minuman" />
 
                     <TextView
                         android:id="@+id/minum"
@@ -218,7 +218,7 @@
                         android:id="@+id/gambar_snack"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/kuliner_1" />
+                        android:src="@drawable/kuliner_11" />
 
                     <TextView
                         android:id="@+id/snack"
@@ -249,7 +249,7 @@
                         android:id="@+id/gambar_desert"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/kuliner_11" />
+                        android:src="@drawable/desert" />
 
                     <TextView
                         android:id="@+id/desert"
@@ -281,7 +281,7 @@
                         android:id="@+id/gambar_kopi"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/kopi_1" />
+                        android:src="@drawable/kopi" />
 
                     <TextView
                         android:id="@+id/kopi"
@@ -312,7 +312,7 @@
                         android:id="@+id/gambar_sarapan"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/breakfast_1" />
+                        android:src="@drawable/sarapan" />
 
                     <TextView
                         android:id="@+id/sarapan"

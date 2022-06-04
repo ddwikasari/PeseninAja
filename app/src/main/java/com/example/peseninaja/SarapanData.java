@@ -26,11 +26,11 @@ public class SarapanData {
     };
 
     private static int[] sarapanImage = {
-            R.drawable.Bubur,
+            R.drawable.bubur,
             R.drawable.nasikuning,
             R.drawable.pancake,
             R.drawable.toast,
-            R.drawable.scrambledEgg,
+            R.drawable.scrambledegg,
     };
 
     private static int[] sarapanCount ={
