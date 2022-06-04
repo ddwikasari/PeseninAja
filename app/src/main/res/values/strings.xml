@@ -2,10 +2,6 @@
     <string name="app_name">PeseninAja</string>
     <string name="category">Kategori</string>
     <string name="nama_menu">Nama Menu</string>
-    <string name="deskripsi">Deskripsi</string>
     <string name="harga">Rp 10000</string>
-    <string name="desc">Bakso atau baso adalah jenis bola daging yang lazim ditemukan pada masakan Indonesia. Bakso umumnya dibuat dari campuran daging sapi giling dan tepung tapioka, tetapi ada juga bakso yang terbuat dari daging ayam, ikan, atau udang bahkan daging kerbau</string>
-    <string name="nama_makanan">Nama Makanan</string>
-    <string name="_20_000">20.000</string>
-    <string name="nasi_goreng">Nasi Goreng</string>
+    <string name="desc">Ayo beli biar tokonya gak tutup</string>
 </resources>

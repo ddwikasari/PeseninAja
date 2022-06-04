@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#AA4A30</color>
-    <color name="colorPrimaryDark">#D57149</color>
-    <color name="colorAccent">#FAD586</color>
-    <color name="colorTombol">#F5EFEF</color>
+    <color name="colorPrimary">#2E0249</color>
+    <color name="colorPrimaryDark">#570A57</color>
+    <color name="colorAccent">#A91079</color>
+    <color name="colorTombol">#FFF1F1F1</color>
     <color name="dasar">#EDCFA9</color>
-    <color name="putih">#F5EFEF</color>
-    <color name="kuning">#FFC107</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="kuning">#F806CC</color>
     <color name="hitam">#000000</color>
 </resources>

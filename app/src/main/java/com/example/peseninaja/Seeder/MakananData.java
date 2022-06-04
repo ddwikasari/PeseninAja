@@ -9,21 +9,39 @@ public class MakananData {
             "Nasi Kuning",
             "Nasi Goreng",
             "Sate",
-            "Soto Betawi"
+            "Soto Betawi",
+            "Ayam Betutu"
     };
 
-    private static String [] makananPrice= {
-            "15000",
-            "10000",
-            "20000",
-            "10000"
+    private  static String [] makananDesc = {
+            "Nasi Kuning Enak Banget",
+            "Nasi Goreng Enakk",
+            "Sate Isinya Banyal",
+            "Soto Betawi Sedapp",
+            "Ayam Betutu Khas Bu oki"
+    };
+    private static int [] makananPrice= {
+            15000,
+            10000,
+            20000,
+            10000,
+            15000,
     };
 
     private static int[] makananImage = {
-            R.drawable.padang,
-            R.drawable.nasgor,
-            R.drawable.sate,
-            R.drawable.soto,
+            R.drawable.kuliner_9,
+            R.drawable.kuliner_10,
+            R.drawable.kuliner_8,
+            R.drawable.kuliner_7,
+            R.drawable.kuliner_6,
+    };
+
+    private static int[] makananCount ={
+            0,
+            0,
+            0,
+            0,
+            0,
     };
 
     public static ArrayList<Makanan> getListData(){
@@ -31,8 +49,10 @@ public class MakananData {
         for (int position = 0; position<makananName.length; position++){
             Makanan makanan = new Makanan();
             makanan.setName(makananName[position]);
+            makanan.setDesc(makananDesc[position]);
             makanan.setPrice(makananPrice[position]);
             makanan.setPhoto(makananImage[position]);
+            makanan.setCount(makananCount[position]);
             list.add(makanan);
         }
         return list;
