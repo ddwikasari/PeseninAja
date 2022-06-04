@@ -249,7 +249,7 @@
                         android:id="@+id/gambar_desert"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/menu_3" />
+                        android:src="@drawable/kuliner_11" />
 
                     <TextView
                         android:id="@+id/desert"
