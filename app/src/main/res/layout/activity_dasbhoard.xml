@@ -39,7 +39,7 @@
                     android:layout_marginTop="1dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ananta Archel Dwikasari"
+                    android:text="Ananta Archels Dwikasari"
                     android:textColor="@color/dasar"
                     android:textSize="14dp"
                     android:textStyle="bold" />
