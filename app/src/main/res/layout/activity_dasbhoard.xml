@@ -218,7 +218,7 @@
                         android:id="@+id/gambar_snack"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/menu_5" />
+                        android:src="@drawable/kuliner_1" />
 
                     <TextView
                         android:id="@+id/snack"
@@ -281,7 +281,7 @@
                         android:id="@+id/gambar_kopi"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/menu_4" />
+                        android:src="@drawable/kopi_1" />
 
                     <TextView
                         android:id="@+id/kopi"
@@ -312,7 +312,7 @@
                         android:id="@+id/gambar_sarapan"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/kuliner_9" />
+                        android:src="@drawable/breakfast_1" />
 
                     <TextView
                         android:id="@+id/sarapan"
