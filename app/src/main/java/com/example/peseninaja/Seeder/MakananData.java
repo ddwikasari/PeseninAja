@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class MakananData {
     private  static String [] makananName = {
-            "Nasi Kuning",
+            "Nasi Padang",
             "Nasi Goreng",
             "Sate",
             "Soto Betawi",
@@ -14,35 +14,28 @@ public class MakananData {
     };
 
     private  static String [] makananDesc = {
-            "Nasi Kuning Enak Banget",
+            "Nasi Asli Padang",
             "Nasi Goreng Enakk",
-            "Sate Isinya Banyal",
+            "Sate Isinya Banyak",
             "Soto Betawi Sedapp",
             "Ayam Betutu Khas Bu oki"
     };
-    private static int [] makananPrice= {
-            15000,
-            10000,
-            20000,
-            10000,
-            15000,
+    private static String [] makananPrice= {
+            "15000",
+            "10000",
+            "20000",
+            "10000",
+            "15000",
     };
 
     private static int[] makananImage = {
-            R.drawable.kuliner_9,
-            R.drawable.kuliner_10,
-            R.drawable.kuliner_8,
-            R.drawable.kuliner_7,
-            R.drawable.kuliner_6,
+            R.drawable.padang,
+            R.drawable.nasgor,
+            R.drawable.sate,
+            R.drawable.soto,
+            R.drawable.betutu,
     };
 
-    private static int[] makananCount ={
-            0,
-            0,
-            0,
-            0,
-            0,
-    };
 
     public static ArrayList<Makanan> getListData(){
         ArrayList<Makanan> list = new ArrayList<>();
@@ -52,7 +45,6 @@ public class MakananData {
             makanan.setDesc(makananDesc[position]);
             makanan.setPrice(makananPrice[position]);
             makanan.setPhoto(makananImage[position]);
-            makanan.setCount(makananCount[position]);
             list.add(makanan);
         }
         return list;

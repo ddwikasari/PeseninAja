@@ -48,6 +48,7 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ListView
                 .apply(new RequestOptions().override(55, 55))
                 .into(holder.imgPhoto);
         holder.tvName.setText(makanan.getName());
+        holder.tvDesc.setText(makanan.getDesc());
         holder.tvPrice.setText(makanan.getPrice());
         holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -75,14 +76,14 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ListView
 
     class ListViewHolder extends RecyclerView.ViewHolder {
         ImageView imgPhoto;
-        TextView tvName;
-        TextView tvPrice;
+        TextView tvName, tvDesc, tvPrice;
         CheckBox checkBox;
 
         ListViewHolder(View itemview) {
             super(itemview);
             imgPhoto = itemview.findViewById(R.id.img_produk);
             tvName = itemview.findViewById(R.id.tv_nama);
+            tvDesc = itemview.findViewById(R.id.tv_desc);
             tvPrice = itemview.findViewById(R.id.tv_harga);
             checkBox = (CheckBox) itemView.findViewById(R.id.checkBox);
         }

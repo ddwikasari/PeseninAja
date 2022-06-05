@@ -10,19 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeseninAja">
         <activity
-            android:name=".OrderViewSarapan"
-            android:exported="false" />
-        <activity
-            android:name=".OrderViewKopi"
-            android:exported="false" />
-        <activity
-            android:name=".OrderViewDesert"
-            android:exported="false" />
-        <activity
-            android:name=".OrderViewSnack"
-            android:exported="false" />
-        <activity
-            android:name=".OrderViewMinuman"
+            android:name=".OrderSuccess"
             android:exported="false" />
         <activity
             android:name=".OrderView"

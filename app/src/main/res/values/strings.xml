@@ -4,4 +4,12 @@
     <string name="nama_menu">Nama Menu</string>
     <string name="harga">Rp 10000</string>
     <string name="desc">Ayo beli biar tokonya gak tutup</string>
+    <string name="kategori1">Makanan</string>
+    <string name="kategori2">Minuman</string>
+    <string name="kategori3">Snack</string>
+    <string name="kategori4">Dessert</string>
+    <string name="kategori5">Kopi</string>
+    <string name="Kategori6">Sarapan</string>
+    <string name="oder">Rangkuman Order</string>
+    <string name="pesanan">Pesanan</string>
 </resources>

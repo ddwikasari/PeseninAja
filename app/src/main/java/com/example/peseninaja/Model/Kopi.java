@@ -4,6 +4,7 @@ public class Kopi {
 
     private String name;
     private String price;
+    private String desc;
     private int photo;
 
     public String getName() {
@@ -22,6 +23,14 @@ public class Kopi {
         this.price = price;
     }
 
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
     public int getPhoto() {
         return photo;
     }
@@ -29,4 +38,5 @@ public class Kopi {
     public void setPhoto(int photo) {
         this.photo = photo;
     }
+
 }

@@ -1,6 +1,7 @@
 package com.example.peseninaja.Seeder;
 
 import com.example.peseninaja.Model.Kopi;
+import com.example.peseninaja.Model.Makanan;
 import com.example.peseninaja.Model.Sarapan;
 import com.example.peseninaja.R;
 
@@ -8,31 +9,43 @@ import java.util.ArrayList;
 
 public class SarapanData {
     private  static String [] sarapanName = {
+            "Bubur",
             "Nasi Kuning",
-            "Nasi Goreng",
-            "Sate",
-            "Soto Betawi"
+            "Pancake",
+            "Toast",
+            "Scrambled Egg"
     };
 
-    private static String [] sarapanPrice = {
+    private static String [] sarapanDesc = {
+            "ini bubur naik haji",
+            "nasi warna kuning",
+            "ini pancake",
+            "ini toast",
+            "ini scrambled egg"
+    };
+
+    private static String [] sarapanPrice= {
+            "5000",
+            "5000",
+            "25000",
             "15000",
-            "10000",
-            "20000",
-            "10000"
+            "15000",
     };
 
     private static int[] sarapanImage = {
-            R.drawable.padang,
-            R.drawable.nasgor,
-            R.drawable.sate,
-            R.drawable.soto,
+            R.drawable.bubur,
+            R.drawable.nasikuning,
+            R.drawable.pancake,
+            R.drawable.toast,
+            R.drawable.scrambledegg,
     };
 
-    public static ArrayList<Sarapan> getListData(){
-        ArrayList<Sarapan> list = new ArrayList<>();
+    public static ArrayList<Makanan> getListData(){
+        ArrayList<Makanan> list = new ArrayList<>();
         for (int position = 0; position<sarapanName.length; position++){
-            Sarapan sarapan = new Sarapan();
+            Makanan sarapan = new Makanan();
             sarapan.setName(sarapanName[position]);
+            sarapan.setDesc(sarapanDesc[position]);
             sarapan.setPrice(sarapanPrice[position]);
             sarapan.setPhoto(sarapanImage[position]);
             list.add(sarapan);

@@ -1,6 +1,7 @@
 package com.example.peseninaja;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,23 +29,31 @@ public class MakananR extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_makanan_r);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Makanan");
+
+
+        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
+
         rvMakanan = findViewById(R.id.rvMakanan);
         btnLanjutkan = findViewById(R.id.btnSerahkan);
         rvMakanan.setHasFixedSize(true);
 
         list.addAll(MakananData.getListData());
         rvMakanan.setLayoutManager((new LinearLayoutManager(this)));
-        MakananAdapter listFilmAdapter = new MakananAdapter(list);
-        rvMakanan.setAdapter(listFilmAdapter);
+        MakananAdapter listmakananAdapter = new MakananAdapter(list);
+        rvMakanan.setAdapter(listmakananAdapter);
 
         btnLanjutkan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(listFilmAdapter.getCheckedMakanan().size() == 0){
+                if(listmakananAdapter.getCheckedMakanan().size() == 0){
 
                 }else{
                     Intent intent = new Intent(MakananR.this, OrderView.class);
-                    intent.putParcelableArrayListExtra("makanan_dipilih", listFilmAdapter.getCheckedMakanan());
+                    intent.putParcelableArrayListExtra("menu_dipilih", listmakananAdapter.getCheckedMakanan());
                     startActivity(intent);
                 }
             }

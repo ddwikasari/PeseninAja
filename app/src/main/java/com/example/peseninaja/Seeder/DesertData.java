@@ -1,7 +1,8 @@
 package com.example.peseninaja.Seeder;
 
+import com.example.peseninaja.Adapter.MakananAdapter;
 import com.example.peseninaja.Model.Desert;
-import com.example.peseninaja.Model.Snack;
+import com.example.peseninaja.Model.Makanan;
 import com.example.peseninaja.R;
 
 import java.util.ArrayList;
@@ -9,31 +10,44 @@ import java.util.ArrayList;
 public class DesertData {
 
     private  static String [] desertName = {
-            "Nasi Kuning",
-            "Nasi Goreng",
-            "Sate",
-            "Soto Betawi"
+            "Terang Bulan",
+            "Donuts",
+            "Gelato",
+            "Bittersweet",
+            "Macaron"
+    };
+
+    private  static String [] desertDesc = {
+            "Temennya Martabak",
+            "Donat Bulat tengah",
+            "Es krim dingin",
+            "By Najla",
+            "warna warni"
     };
 
     private static String [] desertPrice = {
-            "15000",
-            "10000",
-            "20000",
-            "10000"
+            "35000",
+            "30000",
+            "25000",
+            "55000",
+            "100000",
     };
 
     private static int[] desertImage = {
-            R.drawable.padang,
-            R.drawable.nasgor,
-            R.drawable.sate,
-            R.drawable.soto,
+            R.drawable.terang_bulan,
+            R.drawable.donat,
+            R.drawable.gelato,
+            R.drawable.bittersweet,
+            R.drawable.macaron,
     };
 
-    public static ArrayList<Desert> getListData(){
-        ArrayList<Desert> list = new ArrayList<>();
+
+    public static ArrayList<Makanan> getListData(){
+        ArrayList<Makanan> list = new ArrayList<>();
         for (int position = 0; position<desertName.length; position++){
-            Desert desert = new Desert();
+            Makanan desert = new Makanan();
             desert.setName(desertName[position]);
+            desert.setDesc(desertDesc[position]);
             desert.setPrice(desertPrice[position]);
             desert.setPhoto(desertImage[position]);
             list.add(desert);

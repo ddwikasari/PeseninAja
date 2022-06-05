@@ -1,13 +1,16 @@
 package com.example.peseninaja;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.peseninaja.Adapter.OrderAdapter;
 import com.example.peseninaja.HitungTotal;
@@ -27,20 +30,35 @@ public class OrderView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_view);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Rangkuman Order");
+
+
+        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
+
         rvOrder = findViewById(R.id.orderMakanan);
         btnOrder = findViewById(R.id.orderButton);
         txtJumlah = findViewById(R.id.totalOrder);
         rvOrder.setHasFixedSize(true);
 
         Intent ambilData = this.getIntent();
-        ArrayList<OrderMakanan> orderMakanan = ambilData.getParcelableArrayListExtra("makanan_dipilih");
+        ArrayList<OrderMakanan> orderMakanan = ambilData.getParcelableArrayListExtra("menu_dipilih");
 
         HitungTotal hitungTotal = new HitungTotal();
         totalOrder = hitungTotal.hitungTotalOrder(orderMakanan);
-        txtJumlah.setText(""+totalOrder);
+        txtJumlah.setText("Rp"+""+totalOrder);
 
         rvOrder.setLayoutManager((new LinearLayoutManager(this)));
-        OrderAdapter listFilmAdapter = new OrderAdapter(orderMakanan);
-        rvOrder.setAdapter(listFilmAdapter);
+        OrderAdapter listOrderAdapter = new OrderAdapter(orderMakanan);
+        rvOrder.setAdapter(listOrderAdapter);
+
+        btnOrder.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(OrderView.this, OrderSuccess.class));
+            }
+        });
     }
 }
