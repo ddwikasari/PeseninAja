@@ -77,19 +77,12 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:layout_marginTop="10dp"
-                app:cardCornerRadius="5dp"
+            <ImageView
+                android:cropToPadding="false"
+                android:adjustViewBounds="true"
+                android:src="@drawable/resto1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:cropToPadding="false"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/resto1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-            </androidx.cardview.widget.CardView>
-
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

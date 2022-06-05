@@ -34,8 +34,10 @@ public class  Dashboard extends AppCompatActivity implements View.OnClickListene
                 switch (item.getItemId()){
                     case R.id.info:
                         selectedFragment = new InfoFragment();
+                        break;
                     case R.id.promo:
                         selectedFragment = new PromoFragment();
+                        break;
                     case R.id.beranda:
                         startActivity(new Intent(Dashboard.this, Dashboard.class));
                         break;
