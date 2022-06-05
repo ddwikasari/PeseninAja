@@ -1,22 +1,56 @@
 package com.example.peseninaja;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Dashboard extends AppCompatActivity implements View.OnClickListener {
+import com.example.peseninaja.Seeder.InfoFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+
+public class  Dashboard extends AppCompatActivity implements View.OnClickListener {
 
 //    int[] images = {R.drawable.makan};
     private CardView makanan, minuman, snack, desert, kopi, sarapan;
 
+    BottomNavigationView bottomNavigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dasbhoard);
+
+        bottomNavigation = findViewById(R.id.item_bottom_navigasi);
+        bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item){
+                Fragment selectedFragment = null;
+                switch (item.getItemId()){
+                    case R.id.info:
+                        selectedFragment = new InfoFragment();
+                    case R.id.promo:
+                        selectedFragment = new PromoFragment();
+                    case R.id.beranda:
+                        startActivity(new Intent(Dashboard.this, Dashboard.class));
+                        break;
+                        break;
+                    case R.id.pesanan:
+                        selectedFragment = new PesananFragment();
+                        break;
+                    case R.id.diskusi:
+                        selectedFragment = new ChatFragment();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                return true;
+            }
+        });
 
         makanan = findViewById(R.id.card_makanan);
         minuman = findViewById(R.id.card_minuman);

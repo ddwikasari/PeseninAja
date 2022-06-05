@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/KULIAH/TUBES PROMOB/app/src/main/res/drawable-xxhdpi/header.xml" value="0.163" />
-        <entry key="..\:/KULIAH/TUBES PROMOB/app/src/main/res/layout/activity_dasbhoard.xml" value="0.1" />
+        <entry key="..\:/KULIAH/TUBES PROMOB/app/src/main/res/layout/activity_dasbhoard.xml" value="0.22" />
+        <entry key="..\:/KULIAH/TUBES PROMOB/app/src/main/res/layout/fragment_info.xml" value="0.2" />
+        <entry key="..\:/KULIAH/TUBES PROMOB/app/src/main/res/menu/item_bottom_navigasi.xml" value="0.2" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.2045" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/drawable/card_kategori.xml" value="0.2025" />
         <entry key="..\:/SMT 4/PROGMOB/PeseninAja/app/src/main/res/drawable/ic_back_white.xml" value="0.1605" />
