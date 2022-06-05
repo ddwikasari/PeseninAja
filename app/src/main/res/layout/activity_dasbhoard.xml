@@ -49,13 +49,6 @@
                     android:text="udayana@gmail.com | Terverivikasi"
                     android:textColor="@color/dasar"
                     android:textSize="10dp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Sisa saldo Rp, 33.000"
-                    android:textColor="@color/putih"
-                    android:textSize="10sp" />
-
 
             </LinearLayout>
 
@@ -125,22 +118,26 @@
         </LinearLayout>
     </LinearLayout>
     <RelativeLayout
-        android:layout_marginTop="1dp"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".Dashboard">
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
             android:columnCount="2"
             android:rowCount="3">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_makanan"
-                android:layout_width="165dp"
-                android:layout_height="160dp"
+                android:layout_gravity="left"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
                 app:cardCornerRadius="9dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true">
@@ -170,8 +167,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_minuman"
-                android:layout_width="165dp"
-                android:layout_height="160dp"
+                android:layout_gravity="right"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
                 app:cardCornerRadius="9dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true">
@@ -201,8 +199,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_snack"
-                android:layout_width="165dp"
-                android:layout_height="160dp"
+                android:layout_gravity="left"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
                 app:cardCornerRadius="9dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true">
@@ -232,8 +231,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_desert"
-                android:layout_width="165dp"
-                android:layout_height="160dp"
+                android:layout_gravity="right"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
                 app:cardCornerRadius="9dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true">
@@ -264,8 +264,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_kopi"
-                android:layout_width="165dp"
-                android:layout_height="160dp"
+                android:layout_gravity="left"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
                 app:cardCornerRadius="9dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true">
@@ -295,8 +296,9 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_sarapan"
-                android:layout_width="165dp"
-                android:layout_height="160dp"
+                android:layout_gravity="right"
+                android:layout_width="178dp"
+                android:layout_height="178dp"
                 app:cardCornerRadius="9dp"
                 app:cardElevation="8dp"
                 app:cardUseCompatPadding="true">

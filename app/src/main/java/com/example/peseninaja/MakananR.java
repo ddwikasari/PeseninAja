@@ -1,14 +1,19 @@
 package com.example.peseninaja;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.example.peseninaja.Adapter.MakananAdapter;
 import com.example.peseninaja.Model.Makanan;
@@ -20,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class MakananR extends AppCompatActivity {
+
     private RecyclerView rvMakanan;
     private ArrayList<Makanan> list = new ArrayList<>();
     Button btnLanjutkan;
