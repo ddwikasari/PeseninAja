@@ -39,7 +39,7 @@ public class  Dashboard extends AppCompatActivity implements View.OnClickListene
                     case R.id.beranda:
                         startActivity(new Intent(Dashboard.this, Dashboard.class));
                         break;
-                        break;
+
                     case R.id.pesanan:
                         selectedFragment = new PesananFragment();
                         break;

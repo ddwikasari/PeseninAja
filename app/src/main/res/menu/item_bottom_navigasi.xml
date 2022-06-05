@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Tentang Kami"
+    <item android:title="Info"
         android:id="@+id/info"
-        android:icon="@drawable/bottom_home"/>
+        android:icon="@drawable/logoonly"/>
     <item android:title="Promo"
         android:id="@+id/promo"
         android:icon="@drawable/playlist"/>

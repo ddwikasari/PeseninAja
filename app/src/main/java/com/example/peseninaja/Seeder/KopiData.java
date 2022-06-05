@@ -1,8 +1,5 @@
 package com.example.peseninaja.Seeder;
 
-import com.example.peseninaja.KopiR;
-import com.example.peseninaja.Model.Desert;
-import com.example.peseninaja.Model.Kopi;
 import com.example.peseninaja.Model.Makanan;
 import com.example.peseninaja.R;
 

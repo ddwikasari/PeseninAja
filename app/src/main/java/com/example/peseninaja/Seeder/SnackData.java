@@ -1,8 +1,6 @@
 package com.example.peseninaja.Seeder;
 
 import com.example.peseninaja.Model.Makanan;
-import com.example.peseninaja.Model.Minuman;
-import com.example.peseninaja.Model.Snack;
 import com.example.peseninaja.R;
 
 import java.util.ArrayList;
